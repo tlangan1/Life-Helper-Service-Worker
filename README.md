@@ -24,3 +24,5 @@
    SNas0P12bbdAoIzM0MVkGgSouX79t2TRmYihVSpSD4Q
    =======================================
    ```
+
+1. Use [this](https://duckduckgo.com/?q=how+does+web+push+target+the+browser&iax=videos&ia=videos&iai=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2zHqTjyfIY8) resource.
