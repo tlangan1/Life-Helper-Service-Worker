@@ -1,0 +1,20 @@
+{
+  "name": "life-helper-service-worker",
+  "version": "1.0.0",
+  "description": "1. This project is based on the code found in the title link.\r 1. To generate the VAPID keys as documented in this link first globally install `web-push` using the following command\r    ```\r    npm i -g web-push\r    ```\r 1. Next execute the following command.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlangan1/Life-Helper-Service-Worker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlangan1/Life-Helper-Service-Worker/issues"
+  },
+  "homepage": "https://github.com/tlangan1/Life-Helper-Service-Worker#readme"
+}

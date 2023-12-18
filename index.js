@@ -41,9 +41,12 @@ const requestNotificationPermission = async () => {
     throw new Error("Permission not granted for Notification");
   }
 };
+
 const main = async () => {
   check();
+  // Note: Tom L (2023-12-18) I switched the order of the following two lines because
+  // it did not make sense to me to register the service worker before permission was granted
+  await requestNotificationPermission();
   swRegistration = await registerServiceWorker();
-  const permission = await requestNotificationPermission();
 };
 // main(); we will not call main in the beginning.
