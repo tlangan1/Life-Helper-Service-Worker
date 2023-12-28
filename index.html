@@ -9,9 +9,18 @@
   </head>
   <body>
     <h1>Hello World</h1>
-    <button id="permission-btn" onclick="main()">Ask Permission</button>
+    <button
+      id="permission-btn"
+      onclick="askPermissionAndRegisterServiceIfAppropriate()"
+    >
+      Ask Permission
+    </button>
+    <button class="send-message" onclick="sendMessage()">Send Message</button>
     <button class="unregister" onclick="unregisterServiceWorker()">
       Unregister Service Worker
+    </button>
+    <button onclick="simulatePushNotification()">
+      Simulate Push Notification
     </button>
   </body>
 </html>

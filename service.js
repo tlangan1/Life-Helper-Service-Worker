@@ -1,8 +1,3 @@
-self.addEventListener("install", (event) => {
-  self.skipWaiting();
-  // …
-});
-
 self.addEventListener("activate", async () => {
   // This will be called only once when the service worker is activated.
   console.log("The Life Helper service worker was beginning activation.");
@@ -20,6 +15,12 @@ self.addEventListener("activate", async () => {
     console.log(response);
   } catch (err) {
     console.log("Error", err);
+  }
+});
+
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "MESSAGE_IDENTIFIER") {
+    console.log("Got the message");
   }
 });
 
@@ -55,5 +56,7 @@ const saveSubscription = async (subscription) => {
     },
     body: JSON.stringify(subscription),
   });
-  return response.json();
+  /* *** Why does this code expect a JSON package to be returned *** */
+  //   return response.json();
+  return response;
 };
